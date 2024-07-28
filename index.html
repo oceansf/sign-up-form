@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <title>Sign-up Form</title>
 </head>
 <body>
@@ -13,26 +16,59 @@
         <img class="logo" src="./assets//odin-lined.png" alt="odin-lined logo">
         <h1>ODIN</h1>
       </div>
+      <p>Photo by <span style="text-decoration: underline;">Halie West</span> on <span style="text-decoration: underline;">Unsplash</span></p>
     </div>
     <div class="right">
       <div class="top">
-        <h3>This is not a real online service! You know you need something
-          like this in your life to help you realize your deepest dreams.
-          Sign up <em>now</em> to get started.
-        </h3>
-        <br>
-        <h3>You <em>know</em> you want to.</h3>
+        <div class="top-text">
+          <h2>This is not a real online service! You know you need something
+            like this in your life to help you realize your deepest dreams.
+            Sign up <em>now</em> to get started.
+          </h2>
+          <br>
+          <h2>You <em>know</em> you want to.</h2>
+        </div>
       </div>
       <div class="middle">
-        <h3>Let's do this!</h3>
-        <form action="" method="post">
-          <input type="text" id="first-name" name="first-name">
-          <label for="first-name">FIRST NAME</label>
-          
-        </form>
+        <h2>Let's do this!</h2>
+        <div class="form-container">
+          <form action="" method="post">
+            <div class="row">
+              <div class="input-container">
+                <input type="text" id="first-name" name="first-name">
+                <label for="first-name">FIRST NAME</label>
+              </div>
+              <div class="input-container">
+                <input type="text" id="last-name" name="last-name">
+                <label for="last-name">LAST NAME</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-container">
+                <input type="email" id="email" name="email">
+                <label for="email">EMAIL</label>
+              </div>
+              <div class="input-container">
+                <input type="tel" id="phone-number" name="phone-number">
+                <label for="first-name">PHONE NUMBER</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-container">
+                <input type="password" id="password" name="password" required>
+                <label for="password">PASSWORD</label>
+              </div>
+              <div class="input-container">
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <label for="confirm-password">CONFIRM PASSWORD</label>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
       <div class="bottom">
-
+        <button type="submit">Create Account</button>
+        <p>Already have an account? <a href="/">Log in</a></p>
       </div>
     </div>
   </div>
